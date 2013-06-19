@@ -23,7 +23,7 @@ include('db_connect.php'); // = $connection
 
 if(isset($_GET["email"]))
 	{
-	echo ($youremail);
+	echo ("Thank you for comfirming your email");
 	$sql = "UPDATE users SET confirmed='1' WHERE email='$youremail'";
 	$connection->query($sql);
 	}

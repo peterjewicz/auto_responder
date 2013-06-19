@@ -26,7 +26,7 @@ $stmt->close();
 $subject = "Please Confirm Your Email";
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$message = "please confrim mother fucker\n\n";
+$message = "please confrim your email\n\n";
 $message .="<a href='http://localhost/Auto_Responder/confirm.php?email=$email'> click here </a>";
 
 mail($email, $subject, $message, $headers);
